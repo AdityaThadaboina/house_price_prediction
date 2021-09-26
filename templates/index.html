@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static',filename='favicon.ico')}}">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>House Price Prediction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+</head>
+<body>
+    <div class="hed">
+        <h1>HOUSE PRICE PREDICTION</h1>
+    </div>
+    <p class="pl" id="hid1">Please Enter Each and Every value for Prediction</p>
+    <div class="frm" >
+        <form action="/predict" method="POST">
+            <p class="">Crime Rate at the area : </p><br>
+            <input type="text" id="part" name="cr" placeholder="Crime Rate"><br>
+            <p class="">Area of the building : </p><br>
+            <input type="text" name="ra" id="part1" placeholder="Area"><br>
+            <p class="">Air quality at the area : </p><br>
+            <input type="text" name="aq" id="part2" placeholder="Air Quality"><br>
+            <p class="">Number of the rooms in the building : </p><br>
+            <input type="text" name="rn" id="part3" placeholder="Number of Rooms"><br>
+            <p class="">Average age of the family : </p><br>
+            <input type="text" name="age" id="part4" placeholder="Age"><br>
+            <p class="">Number of teachers in the locality : </p><br>
+            <input type="text" name="teh" id="part5" placeholder="Teachers"><br>
+            <p class="">Poor property at the locality : </p><br>
+            <input type="text" name="pp" id="part6" placeholder="Poor Property"><br>
+            <p class="">Number of Bedrooms in the building : </p><br>
+            <input type="text" name="nbed" id="part7" placeholder="Number of Bedrooms"><br>
+            <p class="">Number of the Bathrooms in the building : </p><br>
+            <input type="text" name="nbat" id="part8" placeholder="Number of Bathrooms"><br>
+            <p class="">Rainfall at the locality (in mm) : </p><br>
+            <input type="text" name="rf" id="part9" placeholder="Rainfall (mm)"><br>
+            <p class="">Average distance from the landmarks to building : </p><br>
+            <input type="text" name="ad" id="part10" placeholder="Distance from Main road"><br>
+            <p class="">Is there an Airport nearby? (Yes:1 , No:0) : </p><br>
+            <input type="text" name="ap" id="part11" placeholder="Airport"><br>
+            <p class="">Is there a Lake nearby? (Yes:1 , No:0) :</p><br>
+            <input type="text" name="wl" id="part12" placeholder="Lake"><br>
+            <p class="">Is there both River and Lake nearby? (Yes:1 , No:0) : </p><br>
+            <input type="text" name="lr" id="part13" placeholder="River and Lake"><br>
+            <p class="">Is there a River nearby? (Yes:1 , No:0) :</p><br>
+            <input type="text" name="wr" id="part14" placeholder="River"><br>
+            <button   class="btn btn-info" >Predict</button>
+            
+            
+        </form>
+    </div>
+    <div class="row" >
+        {% if prediction %}
+        <h2 >Price of the House : {{prediction}} Lacs..</h2>
+        {% endif %}
+    </div>
+    <script>
+        function myfun()
+        {
+            document.getElementById("hid1").style.display="none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+body
+{
+    position: relative;
+}
+h1
+{
+  
+  text-align: center;
+  font-size: 500%;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-weight: bolder;
+  margin: 0;
+}
+p
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 120%;
+}
+.hed
+{
+    text-align: center;
+    height: 625%;
+    background-color: rgb(80, 205, 255);
+    margin: 0 0 0 0 ;
+
+}
+
+.frm
+{
+    position: absolute;
+    top: 150%;
+    left: 20%;
+    margin: 0 ;
+
+}
+
+.frm #part
+{
+  position: absolute;
+  top: 0;
+  left: 49%;
+ 
+  
+}
+
+.frm #part1
+{
+  position: absolute;
+  top: 6.5%;
+  left: 43%;
+ 
+  
+}
+
+.frm #part2
+{
+  position: absolute;
+  top: 13%;
+  left: 47%;
+ 
+}
+.frm #part3
+{
+  position: absolute;
+  top: 19.5%;
+  left: 75.5%;
+  
+}
+.frm #part4
+{
+  position: absolute;
+  top: 26%;
+  left: 55%;
+  
+}
+.frm #part5
+{
+  position: absolute;
+  top: 32.5%;
+  left: 71%;
+ 
+  
+}
+.frm #part6
+{
+  position: absolute;
+  top: 39%;
+  left: 59%;
+ 
+  
+}
+.frm #part7
+{
+  position: absolute;
+  top: 45.5%;
+  left: 76%;
+  
+}
+.frm #part8
+{
+  position: absolute;
+  top: 52%;
+  left: 85%;
+  
+}
+.frm #part9
+{
+  position: absolute;
+  top: 58.5%;
+  left: 65.5%;
+ 
+}
+.frm #part10
+{
+  position: absolute;
+  top: 65%;
+  left: 101.5%;
+  
+}
+.frm #part11
+{
+  position: absolute;
+  top: 71.5%;
+  left: 83%;
+  
+}
+.frm #part12
+{
+  position: absolute;
+  top: 78%;
+  left: 76.5%;
+ 
+  
+}
+.frm #part13
+{
+  position: absolute;
+  top: 84.5%;
+  left: 102.5%;
+  
+  
+}
+.frm #part14
+{
+  position: absolute;
+  top: 91%;
+  left: 77.5%;
+  
+  
+}
+
+.pl
+{
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.row
+{
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  margin: 0;
+  text-align: center;
+  color:tomato;
+  
+}
+
+h2
+{
+  font-family: 'Luckiest Guy', cursive;
+}
